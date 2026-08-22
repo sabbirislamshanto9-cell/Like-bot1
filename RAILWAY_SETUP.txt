@@ -1,0 +1,24 @@
+AS LIKE BOT - Railway deployment
+
+1) Upload these files:
+   - main.py
+   - requirements.txt
+   - Dockerfile
+
+2) Railway Variables:
+   BOT_TOKEN = your NEW Telegram bot token
+   BOT_DATA_DIR = /data/bot_data
+
+3) Railway Volume:
+   Add a Volume to this service and mount it at:
+   /data
+
+   This is required if you want users, balances, orders, packages,
+   auto-like lists and other JSON data to survive redeploys/restarts.
+
+4) Deploy/redeploy.
+
+Important:
+- The previous token was exposed in the uploaded source. Revoke it in
+  @BotFather and create a new token before deploying.
+- Do NOT commit the new token to GitHub.
