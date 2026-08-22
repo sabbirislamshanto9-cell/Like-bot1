@@ -37,7 +37,7 @@ from aiohttp import web
 # CONFIGURATION - EDIT THESE VALUES
 # ═══════════════════════════════════════════════════════════════════
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "")  # Set BOT_TOKEN in Railway Variables
+BOT_TOKEN = os.environ.get("8832692794:AAGMCR2XmbnhGfxxLxgUggNt9y9a3GRqjKI", "")  # Set BOT_TOKEN in Railway Variables
 ADMIN_ID = 7510853558                        # Your Telegram numeric ID
 
 # Single API Config
